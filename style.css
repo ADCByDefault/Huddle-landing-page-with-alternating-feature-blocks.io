@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+:root {
+    /* ### Primary */
+    --Pink: hsl(322, 100%, 66%);
+    /* ### Neutral */
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+    /* ### fonts */
+    --Poppins: 'Poppins', sans-serif;
+    /*600 heading*/
+    --Sans: 'Open Sans', sans-serif;
+    /*400 700 body*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: var(--Sans);
+}
+
+.header {
+    text-align: center;
+    padding: 1.5rem .5rem 2rem;
+    background-image: url(images/bg-hero-mobile.svg);
+    background-color: var(--Very-Pale-Cyan);
+    background-position: top;
+    background-size: cover;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav img {
+    margin-left: -3rem;
+    width: 70%;
+}
+
+.nav .btn {
+    margin-right: .5rem;
+}
+
+.hero {
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero p {
+    line-height: 1.5;
+}
+
+.hero img {
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.main {
+    text-align: center;
+    padding: 3rem 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    position: relative;
+}
+
+.main section {
+    padding: 3rem;
+    border-radius: .7rem;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main section img {
+    width: 100%;
+}
+
+.main article {
+    max-width: 60ch;
+}
+
+.main article h2 {
+    color: var(--Very-Dark-Cyan);
+    font-size: 1.3rem;
+    margin-top: 3rem;
+}
+
+.main article p {
+    color: var(--Grayish-Blue);
+    font-size: 1rem;
+}
+
+.main .bot-starter {
+    background-color: white;
+    padding: 1rem 1rem 2rem;
+    transform: translateY(50%);
+}
+
+.main .bot-starter h2 {
+    font-size: 1.1rem;
+    margin: 1rem;
+}
+
+.footer {
+    background-color: var(--Very-Dark-Cyan);
+    color: var(--Very-Pale-Cyan);
+    padding: 12rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.address li {
+    font-style: normal;
+    font-size: 1rem;
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.address p {
+    margin: 0;
+    margin-left: 1.5rem;
+}
+
+.links {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.links li {
+    padding: .4rem;
+}
+
+.links a {
+    color: var(--Very-Pale-Cyan);
+    text-decoration: none;
+}
+
+.links a:hover {
+    border-bottom: 1px solid;
+}
+
+.socials {
+    margin: 2rem 0 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.socials li {
+    color: var(--Very-Pale-Cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials a {
+    text-decoration: none;
+}
+
+.socials i {
+    color: var(--Very-Pale-Cyan);
+    font-size: 16px;
+    width: 32px;
+    aspect-ratio: 1;
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color .3s;
+}
+
+.socials i:hover {
+    color: var(--Pink);
+}
+
+.copyright {
+    font-size: .75rem;
+}
+
+footer {
+    color: white;
+    background-color: var(--Very-Dark-Cyan);
+    padding: .5rem;
+}
+
+footer p {
+    margin: 0;
+    margin: auto;
+}
+
+footer a {
+    color: white;
+}
+
+/*
+UTILITIES
+*/
+p {
+    max-width: 55ch;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    font-size: .8rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 1.5rem;
+    transition: color .5s, background-color .5s;
+}
+
+.btn.btn-white {
+    color: black;
+    background-color: white;
+    padding: .5rem 1.5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn.btn-white:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.btn.btn-pink {
+    color: white;
+    background-color: var(--Pink);
+    padding: .7rem 3rem;
+    box-shadow: 0 5px 10px rgba(255, 82, 192, 0.5);
+}
+
+.btn.btn-pink:hover {
+    opacity: .8;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--Poppins);
+}
+
+/*
+MEDIA QUERIES
+*/
+@media (min-width:576px) {
+    .header {
+        padding: 2rem 2rem 2rem;
+    }
+
+    .main {
+        padding: 3rem 2rem 0rem;
+    }
+
+    .main section {
+        text-align: left;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: calc(1rem + 2vw);
+    }
+
+    .main section img {
+        flex-shrink: 0;
+        width: 40%;
+        max-width: 500px;
+        object-fit: contain;
+    }
+
+    .main section:nth-of-type(1) img,
+    .main section:nth-of-type(3) img {
+        order: 2;
+    }
+
+    .main article {
+        order: 1;
+    }
+
+    .main .bot-starter {
+        flex-direction: column;
+    }
+}
+
+@media (min-width:992px) {
+    .hero {
+        text-align: left;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .hero .heading {
+        width: 50%;
+    }
+
+    .hero .imgs {
+        width: 50%;
+    }
+
+    .main .bot-starter {
+        max-width: 500px;
+    }
+
+    .address p{
+        max-width: 50ch;
+    }
+
+    .mid, .bot{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mid{
+        flex-grow: 1;
+    }
+
+    .lists{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .links{
+        padding-left: 3rem;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 120px;
+    }
+
+    .links li{
+        height: 40px;
+    }
+
+    .copyright{
+        width: 100%;
+        text-align: right;
+    }
+
+}
